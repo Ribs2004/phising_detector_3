@@ -187,6 +187,27 @@ Exemplo de saída:
 
 ---
 
+## 📂 Dataset de URLs maliciosas (malicious_phish.csv)
+
+Para realizar a detecção baseada em blacklist, o projeto utiliza um dataset de URLs maliciosas (phishing).  
+Como o arquivo original (`malicious_phish.csv`) é grande e não deve ser versionado no Git, ele é disponibilizado em formato compactado.
+
+### 📥 Download do dataset
+
+Baixe o arquivo ZIP com o dataset pelo link abaixo:
+
+[⬇️ Baixar dataset (malicious_phish.zip)](<sandbox:/mnt/data/archive (1>).zip)
+
+### 🗂️ Como usar o dataset no projeto
+
+1. Faça o download do arquivo ZIP.
+2. Extraia o arquivo `malicious_phish.csv`.
+3. Coloque o arquivo extraído na seguinte pasta do projeto:
+
+   ```text
+   data/malicious_phish.csv
+
+
 ## 📬 Autor
 
 Projeto desenvolvido por **Pedro Ribeiro** para **Tecnologias Hackers – Insper**.
