@@ -1,0 +1,57 @@
+<!-- web/templates/index.html -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <title>Detector de Phishing - Conceito C</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Detector de Phishing</h1>
+    <p class="subtitle">
+      Insira uma URL para verificar se ela apresenta características suspeitas de phishing.
+    </p>
+
+    <form id="analyze-form">
+      <label for="url-input">URL:</label>
+      <input type="text" id="url-input" name="url" placeholder="https://exemplo.com" required />
+      <button type="submit">Analisar</button>
+    </form>
+
+    <div id="result-section" class="hidden">
+      <h2>Resultado</h2>
+
+      <div class="status-wrapper">
+        <span>Status:</span>
+        <span id="status-badge" class="badge">-</span>
+      </div>
+
+      <table class="result-table">
+        <tr>
+          <th>URL digitada</th>
+          <td id="result-input-url">-</td>
+        </tr>
+        <tr>
+          <th>URL normalizada</th>
+          <td id="result-normalized-url">-</td>
+        </tr>
+        <tr>
+          <th>Host</th>
+          <td id="result-host">-</td>
+        </tr>
+        <tr>
+          <th>Indicadores suspeitos</th>
+          <td id="result-indicators">-</td>
+        </tr>
+        <tr>
+          <th>Motivos</th>
+          <td id="result-reasons">-</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

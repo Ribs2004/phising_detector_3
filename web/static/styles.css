@@ -1,0 +1,110 @@
+/* web/static/styles.css */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f6f8;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  padding: 24px 32px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  margin-top: 0;
+  text-align: center;
+}
+
+.subtitle {
+  text-align: center;
+  color: #555;
+  margin-bottom: 24px;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+label {
+  display: none;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+button {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  background-color: #1976d2;
+  color: #fff;
+}
+
+button:hover {
+  background-color: #145a9e;
+}
+
+.hidden {
+  display: none;
+}
+
+.status-wrapper {
+  margin-bottom: 12px;
+  font-size: 16px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.badge {
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+}
+
+.badge-safe {
+  background-color: #2e7d32; /* verde */
+}
+
+.badge-suspicious {
+  background-color: #fbc02d; /* amarelo */
+}
+
+.badge-malicious {
+  background-color: #c62828; /* vermelho */
+}
+
+.result-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 8px;
+}
+
+.result-table th,
+.result-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.result-table th {
+  width: 230px;
+  background-color: #f0f0f0;
+  text-align: left;
+}

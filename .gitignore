@@ -1,0 +1,34 @@
+# Ignore dataset folder
+data/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Virtual environments
+venv/
+env/
+
+# Flask cache
+instance/
+
+# VSCode settings
+.vscode/
+
+# macOS junk
+.DS_Store
+
+# Windows junk
+Thumbs.db
+
+# Log files
+*.log
+
+# Backup files
+*.bak
+*.tmp
+
+# Compiled stuff
+*.egg-info/
+build/
+dist/
