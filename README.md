@@ -190,19 +190,20 @@ Exemplo de saída:
 ## 📂 Dataset de URLs maliciosas (malicious_phish.csv)
 
 Para realizar a detecção baseada em blacklist, o projeto utiliza um dataset de URLs maliciosas (phishing).  
-Como o arquivo original (`malicious_phish.csv`) é grande e não deve ser versionado no Git, ele é disponibilizado em formato compactado.
+Como o arquivo original (`malicious_phish.csv`) é grande e não deve ser versionado no Git, ele é disponibilizado através de uma fonte confiável.
 
 ### 📥 Download do dataset
 
-Baixe o arquivo ZIP com o dataset pelo link abaixo:
+Baixe o dataset diretamente no Kaggle:
 
-[⬇️ Baixar dataset (malicious_phish.zip)](<sandbox:/mnt/data/archive (1>).zip)
+🔗 **https://www.kaggle.com/datasets/sid321axn/malicious-urls-dataset7**
 
 ### 🗂️ Como usar o dataset no projeto
 
-1. Faça o download do arquivo ZIP.
-2. Extraia o arquivo `malicious_phish.csv`.
-3. Coloque o arquivo extraído na seguinte pasta do projeto:
+1. Acesse o link acima no Kaggle.
+2. Baixe o arquivo do dataset (ZIP).
+3. Extraia o arquivo `malicious_phish.csv`.
+4. Coloque o arquivo extraído no seguinte caminho do projeto:
 
    ```text
    data/malicious_phish.csv
